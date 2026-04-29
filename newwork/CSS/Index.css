@@ -94,7 +94,7 @@ nav {
 
 .banner_buttons {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 18px;
 }
@@ -107,6 +107,7 @@ nav {
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.2s ease, filter 0.2s ease;
+        animation: buttonanimate 5s linear infinite;
 }
 
 .banner_buttons button:hover {
@@ -122,6 +123,41 @@ nav {
 .banner_buttons .secondary {
     background: #f8fafc;
     color: #0f172a;
+}
+ol {
+    color:greenyellow;
+    font-size: 30px;
+    max-width: 600px;
+    margin: 0 48px;
+    padding: 5px 24px;
+    
+}
+.form{
+    width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+}
+.form_data{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.form_data label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+.form_data input {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+.form_image{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px; 
+    font-size: 25px;
 }
 
 @media (max-width: 820px) {
@@ -155,5 +191,28 @@ nav {
     .banner_buttons {
         flex-direction: column;
         gap: 14px;
+    }
+}
+@keyframes buttonanimate{
+    /* from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(30deg)
+    } */
+    0%{
+        background-color: red;
+     }
+    25%{
+        background-color: rgb(42, 21, 228);
+     }
+    50%{
+        background-color: rgb(16, 247, 0);
+    }
+    75%{
+        background-color: rgb(217, 0, 255);
+    }
+    100%{
+        background-color: rgb(0, 195, 255);
     }
 }
