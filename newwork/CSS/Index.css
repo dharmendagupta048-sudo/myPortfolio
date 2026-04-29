@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f2937;
+    background: linear-gradient(180deg, #f7f8fb 0%, #e2e7f0 100%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    min-height: 70px;
+    background: rgba(15, 23, 42, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #f8fafc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #7dd3fc;
+    transform: translateY(-2px);
+}
+
+.content {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 48px 24px 72px;
+    text-align: center;
+}
+
+
+.banner_main {
+    position: relative;
+    display: grid;
+    place-items: center;
+    gap: 24px;
+    padding: 48px 32px;
+    min-height: 380px;
+     border-radius: 26px; 
+    background-image: url('../Resourses/car.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.banner_data,
+.banner_buttons {
+    position: relative;
+    z-index: 1;
+}
+
+.banner_data h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    color: #f8fafc;
+    line-height: 1.05;
+    text-shadow: 0 18px 38px rgba(0, 0, 0, 0.3);
+}
+
+.banner_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.banner_buttons button {
+    border: none;
+    border-radius: 999px;
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.banner_buttons button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+.banner_buttons button:first-child {
+    background: #0284c7;
+    color: #ffffff;
+}
+
+.banner_buttons .secondary {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+@media (max-width: 820px) {
+    nav {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .nav-links {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content {
+        padding: 32px 18px 56px;
+    }
+
+    .banner_main {
+        padding: 36px 24px;
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 520px) {
+    .hero-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .banner_buttons {
+        flex-direction: column;
+        gap: 14px;
+    }
+}
