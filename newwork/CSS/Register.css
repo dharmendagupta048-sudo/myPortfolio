@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(143, 143, 195);
+    height: 100px;
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    width: 90%;
+    background: #ffffff;
+    margin: 40px auto;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+/* Sections */
+.general, .contact {
+    flex: 1;
+    padding: 25px;
+    width: 100px;
+}
+
+.general {
+    background: #f8f9fc;
+}
+
+.contact {
+    background:blue;
+    color: white;
+}
+
+/* Headings */
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input containers */
+.form-menu,
+.form-menu-contact {
+    margin-bottom: 15px;
+}
+.form-menu input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(29, 156, 199, 0.3);
+    outline: none;
+    border-bottom: 2px solid #1d9cc7;
+}
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.form-menu input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #1d9cc7;
+}
+input:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 5px rgba(78,115,223,0.5);
+}
+
+/* Contact inputs */
+.contact input {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.4);
+    color: white;
+}
+
+.contact input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+/* Row layouts */
+.form-name,
+.form-business {
+    display: flex;
+    gap: 10px;
+}
+
+.form-name .form-menu,
+.form-business .form-menu {
+    flex: 1;
+}
+
+/* Button */
+.form-btn {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-btn button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #4e73df;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-btn button:hover {
+    background: #2e59d9;
+}
+.form-checkbox {
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    margin:0px;
+    padding: 0px;
+}
